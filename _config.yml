@@ -1,8 +1,9 @@
-theme: jekyll-theme-cayman
+remote_theme: lewismiddleton/cayman-dark
 title: Twitsnap Documentation
 description: Welcome to the documentation for the Twitsnap mobile app! 
 plugins:
   - jekyll-remote-theme
+  - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
