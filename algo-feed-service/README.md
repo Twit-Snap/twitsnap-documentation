@@ -1,4 +1,4 @@
-# Feed Algorthm Service
+# Feed Algorithm Service
 
 ## Documentation starts here
 Hello
