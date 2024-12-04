@@ -1,0 +1,19 @@
+// Define dark theme variables
+$background-color: #121212;
+$text-color: #ffffff;
+$link-color: #bb86fc;
+$brand-color: #03dac6;
+$grey-color: #686868;
+$grey-color-light: #414141;
+$grey-color-dark: #252525;
+
+// Include Minima's original skin import to inherit other styles
+@import "minima/skins/classic";
+
+// Override specific color variables
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+// Add more custom styling as needed
