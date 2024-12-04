@@ -9,3 +9,4 @@ relative_links:
   collections: true
 include:
   - README.md
+  - algo-feed-service
