@@ -1,3 +1,109 @@
+# Requirements
+
+-   Python 3.11
+-   Docker 27.3.1
+-   Makefile (Optional)
+-   Firebase project serviceAccountKey.json
+
+# Install
+
+First, clone the repository
+
+```bash
+git clone https://github.com/Twit-Snap/message-service.git
+```
+
+or
+
+```bash
+git clone git@github.com:Twit-Snap/message-service.git
+```
+
+Then, copy inside src/ folder the serviceAccountKey.json from your firebase project.
+
+# Run it
+
+### Build
+
+```bash
+docker build -t image-message-service . # build it
+```
+
+or
+
+```bash
+make build
+```
+
+### Run
+
+```bash
+docker run --name message-service -p 8082:8082 image-message-service # run it
+```
+
+or
+
+```bash
+make run
+```
+
+### Stop & Clean container
+
+```bash
+docker stop message-service && docker rm message-service # stop & clean container
+```
+
+or
+
+```bash
+make stop
+```
+
+### Clean image
+
+```bash
+docker rmi image-message-service # clean image
+```
+
+or
+
+```bash
+make clean
+```
+
+### Run tests
+
+```bash
+pytest -v # run tests
+```
+
+or
+
+```bash
+make test
+```
+
+# Secrets and environment variables
+
+USERS_SERVICE_URL: Url to twitsnap users service
+JWT_SECRET_KEY: JWT generator key
+
+### Firebase
+
+You must need to configure the secret DATABASE_URL to an url of a real-time database from firebase and serviceAccountKey.json file content in base64 to SECRET_ACCOUNT_KEY.
+
+### New Relic
+
+If you want to use New Relic to monitor the service, you must need to configure the secrets NEW_RELIC_APP_NAME and NEW_RELIC_LICENSE_KEY
+
+# Architecture
+
+This service has the following architecture:
+
+-   Controller layer: Validates data received from HTTP requests
+-   Service layer: Bussiness logic and sending data to the repository
+-   Repository layer: Connects to the firebase real-time database
+
 # Open API specification
 
 ```yaml
