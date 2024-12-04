@@ -1,5 +1,4 @@
-# Welcome to the documentation for the Twitsnap mobile app!
-Currently maintained by:
+## Currently maintained by:
 * Juan Manuel Pascual Osorio
 * Maximiliano Nicolas Otero Silvera - 108634
 * Martin Juan Cwikla - 107923
