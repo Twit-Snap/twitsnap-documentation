@@ -1,3 +1,5 @@
+This site holds the complete documentation for the services used for the development of the Twitsnap mobile app for Android.
+
 ## Currently maintained by:
 * Juan Manuel Pascual Osorio
 * Maximiliano Nicolas Otero Silvera - 108634
