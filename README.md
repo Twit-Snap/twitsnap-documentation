@@ -12,3 +12,4 @@ This site holds the complete documentation for the services used for the develop
 * [Users Service](www.google.com)
 * [Feed Algorithm Service](algo-feed-service/)
 * [Metrics Service](wwww.google.com)
+* [Message Service](www.google.com)
