@@ -1,4 +1,4 @@
-remote_theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman
 title: Twitsnap Documentation
 description: Documentation for the Twitsnap mobile App 
 plugins:
