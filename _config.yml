@@ -1,10 +1,11 @@
-theme: minima
+remote_theme: jekyll/minima@3cdd14d
 minima:
   skin: dark
 title: Twitsnap Documentation
 description: Documentation for the Twitsnap mobile App 
 plugins:
   - jekyll-relative-links
+  - jekyll-remote-theme
 relative_links:
   enabled: true
   collections: true
