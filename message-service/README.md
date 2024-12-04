@@ -19,7 +19,13 @@ or
 git clone git@github.com:Twit-Snap/message-service.git
 ```
 
-Then, copy inside src/ folder the serviceAccountKey.json from your firebase project.
+Then, if you want to install the requirements to continue with the development run:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
 # Run it
 
@@ -90,7 +96,7 @@ JWT_SECRET_KEY: JWT generator key
 
 ### Firebase
 
-You must need to configure the secret DATABASE_URL to an url of a real-time database from firebase and serviceAccountKey.json file content in base64 to SECRET_ACCOUNT_KEY.
+You must need to configure the secret DATABASE_URL to an url of a real-time database from firebase and serviceAccountKey.json file content in base64 encode to SECRET_ACCOUNT_KEY.
 
 ### New Relic
 

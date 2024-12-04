@@ -1,3 +1,95 @@
+# Requirements
+
+-   NodeJS 20
+-   Docker 27.3.1
+-   Docker-compose 2.6.0
+
+# Install
+
+First, clone the repository
+
+```bash
+git clone https://github.com/Twit-Snap/twits_service.git
+```
+
+or
+
+```bash
+git clone git@github.com:Twit-Snap/twits_service.git
+```
+
+Then, if you want to install the requirements to continue with the development run:
+
+```bash
+npm i
+```
+
+# Run it
+
+### Run in development
+
+```bash
+npm run dev
+```
+
+### Run in production
+
+#### Build
+
+```bash
+npm run build
+```
+
+#### Run
+
+```bash
+npm run start
+```
+
+### Run linter
+
+```bash
+npm run lint
+```
+
+### Run tests
+
+#### Run
+
+```bash
+npm run test
+```
+
+#### Coverage
+
+```bash
+npm run coverage
+```
+
+# Secrets and environment variables
+
+MONGODB_URI: Uri to mongo database, default = mongodb://localhost:27017/snapmsg. If you want to modify it, you can do so in docker-compose.yaml
+
+FEED_ALGORITHM_URL: Url to twitsnap feed algorithm service
+
+USERS_SERVICE_URL: Url to twitsnap users service
+
+METRICS_SERVICE_URL: Url to twitsnap metrics service (optional)
+
+JWT_SECRET_KEY: JWT generator key
+
+### New Relic
+
+If you want to use New Relic to monitor the service, you must need to configure the secrets NEW_RELIC_APP_NAME and NEW_RELIC_LICENSE_KEY
+
+# Architecture
+
+This service has the following architecture:
+
+-   Controller layer: Validates data received from HTTP requests
+-   Service layer: Bussiness logic and communicates with the repository
+-   Repository layer: Makes queries to the mongo database
+
 # Open API specification
 
 ```yaml

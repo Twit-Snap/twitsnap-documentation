@@ -1,3 +1,105 @@
+# Requirements
+
+-   NodeJS 20
+-   Docker 27.3.1
+-   Docker-compose 2.6.0
+-   Firebase project serviceAccountKey.json
+-   Firebase googleCredentials.json
+
+# Install
+
+First, clone the repository
+
+```bash
+git clone https://github.com/Twit-Snap/users_service.git
+```
+
+or
+
+```bash
+git clone git@github.com:Twit-Snap/users_service.git
+```
+
+Then, if you want to install the requirements to continue with the development run:
+
+```bash
+npm i
+```
+
+# Run it
+
+### Run in development
+
+```bash
+npm run dev
+```
+
+### Run in production
+
+#### Build
+
+```bash
+npm run build
+```
+
+#### Run
+
+```bash
+npm run start
+```
+
+### Run linter
+
+```bash
+npm run lint
+```
+
+### Run tests
+
+#### Run
+
+```bash
+npm run test
+```
+
+#### Coverage
+
+```bash
+npm run coverage
+```
+
+# Secrets and environment variables
+
+DATABASE_URL: Url to postgresql database, default = postgres://myuser:mypassword@db:5432/twitsnap_users. If you want to modify it, you can do so in docker-compose.yaml
+
+TWILIO_AUTH_TOKEN: Twilio auth token to send sms and email verifications
+
+USER_SERVICE_URL: Url to this service
+
+TWITS_SERVICE_URL: Url to twitsnap twits service
+
+METRICS_SERVICE_URL: Url to twitsnap metrics service (optional)
+
+JWT_SECRET_KEY: JWT generator key
+
+SMTP_API_KEY: Your Emblue email api key as a JWT token
+
+### Firebase
+
+You must need to configure SECRET_ACCOUNT_KEY with serviceAccountKey.json file content in base64 encode. Same for GOOGLE_APPLICATION_CREDENTIALS_JSON secret.
+
+### New Relic
+
+If you want to use New Relic to monitor the service, you must need to configure the secrets NEW_RELIC_APP_NAME and NEW_RELIC_LICENSE_KEY
+
+# Architecture
+
+This service has the following architecture:
+
+-   Controller layer: Validates data received from HTTP requests
+-   Service layer: Bussiness logic and communicates with the repository
+-   Repository layer: Makes queries to the postgresql database
+
 # Open API specification
 
 ```yaml
