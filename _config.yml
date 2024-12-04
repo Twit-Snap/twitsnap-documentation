@@ -1,4 +1,6 @@
-theme: jekyll-theme-cayman
+theme: minima
+minima:
+  skin: dark
 title: Twitsnap Documentation
 description: Documentation for the Twitsnap mobile App 
 plugins:
