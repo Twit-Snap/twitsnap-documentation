@@ -21,7 +21,6 @@ In this section you can register a new administrator. You must enter the followi
 - **Confirm Password:** Confirm the password of the administrator
 - **Register:** Button to register the administrator
 
-![](./admin-sing-up.png)
 
 ### Users
 
@@ -35,6 +34,7 @@ In this section you can see the list of users of the Twitsnap project. You can s
 - **Block:** If the user is blocked or not and the option to block or unblock the user
 
 Clicking on the user you can see the complete information of the user.
+
 
 ### Twits
 
@@ -54,8 +54,16 @@ Clicking on the twit you can see the complete information of the twit. And the w
 
 In this section you can see the metrics of the Twitsnap project. You can see the following information:
 
+
+
 - **Register Metrics:** Shows the metrics of the registered users with and without provider, the average time of registration and the average time of registration and the amount of successful and failed registrations.
+
+
+
 - **Login Metrics:** Shows the metrics of the logins with and without provider, the average time of login and the amount of successful and failed logins.
+
+
+
 - **Block Metrics:** Shows the metrics of the blocks users.
 - **Location Metrics:** Shows the distribution of the users by location.
 - **Content Metrics:** Shows the metrics of the twits and hashtags.
