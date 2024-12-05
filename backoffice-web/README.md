@@ -21,6 +21,8 @@ In this section you can register a new administrator. You must enter the followi
 - **Confirm Password:** Confirm the password of the administrator
 - **Register:** Button to register the administrator
 
+![](./admin-sing-up.png)
+
 ### Users
 
 In this section you can see the list of users of the Twitsnap project. You can see the following information:

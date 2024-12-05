@@ -10,7 +10,7 @@ This site holds the complete documentation for the services used for the develop
 ## Frontend
 
 * [Mobile App](www.google.com)
-* [Backoffice Web](www.google.com)
+* [Backoffice Web](backoffice-web/)
 
 ## Backend
 
