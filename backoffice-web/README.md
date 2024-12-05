@@ -21,7 +21,6 @@ In this section you can register a new administrator. You must enter the followi
 - **Confirm Password:** Confirm the password of the administrator
 - **Register:** Button to register the administrator
 
-![](./admin-sing-up.png)
 
 ### Users
 
