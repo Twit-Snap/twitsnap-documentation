@@ -32,6 +32,7 @@ People who visit your profile can also see the data about you and follow you.
 
 When you tap on a twit, you'll be taken to the twit inspection screen. Here you can see the twit's content, the user who posted it, the number of likes, comments and bookmarks, and the comments themselves.
 You can also like, comment, bookmark or share thw twit with other people using apps like WhatsApp, Instagram or Twitter/X.
+
 ![twit-interacted.png](twit-interacted.jpg)
 
 On this view, twits can also be deleted or edited only by the user who posted them.
