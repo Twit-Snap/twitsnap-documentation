@@ -1,4 +1,6 @@
-# Requirements
+# Metrics Service
+
+## Requirements
 - NodeJS 20
 - Docker 27.3.1
 - Docker-compose 2.6.0
