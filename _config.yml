@@ -14,3 +14,4 @@ include:
     - metrics-service
     - twits-service
     - users-service
+    - postmortem
