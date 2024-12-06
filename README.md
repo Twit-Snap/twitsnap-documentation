@@ -12,13 +12,9 @@ This project was developed using a microservices architecture.
 
 ![general architecture](general_arch.png)
 
-## User Manual
-
--   [TwitSnap user manual](user-manual/)
-
 ## Frontend
 
--   [Mobile App](user-manual/)
+-   [Mobile App](mobile-app/)
 -   [Backoffice Web](backoffice-web/)
 
 ## Backend

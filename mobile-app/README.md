@@ -1,4 +1,4 @@
-# User Manual
+# Mobile App
 
 This manual explains some of the core functionalities of the Mobile App.
 
@@ -65,6 +65,9 @@ It also features a list of trending topics and users to follow given the people 
 
 ![search2](search2.jpg)
 
+One search, multiple results.
+
+![messiSearch](messiSearch.jpeg)
 ## Messages
 
 ![chat1](chat1.jpg)
@@ -81,7 +84,10 @@ Notifications for interactions with other users or twits that are trending are s
 
 ## Metrics
 
-The metrics screen allows you to see some of the data of your usage of the app, such as the number of twits you've posted, the number of likes you've given, the number of comments you've made, etc.
+The metrics screen allows you to see some of the data of your usage of the app, for twits you can see the number of likes you've given, the number of comments you've made, etc and also you can see the number of followers you have.
+
+![metricsTwits](metricsTwits.jpeg)
+![metricsFollowers](metricsFollowers.jpeg)
 
 ## Verification
 

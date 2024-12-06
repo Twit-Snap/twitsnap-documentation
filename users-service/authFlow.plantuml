@@ -1,0 +1,80 @@
+@startuml
+skinparam activityDiamondBackgroundColor #FBFB77
+skinparam activityBackgroundColor #CCCCFF
+skinparam noteBorderColor #999999
+skinparam noteBackgroundColor #FFFFCC
+
+start
+split
+  :Usuario inicia sesión con Google;
+  if (¿Usuario existe en Firebase?) then (Sí)
+    :Iniciar sesión directamente;
+  else (No)
+    if (¿Email existe en PostgreSQL?) then (Sí)
+      :Vincular cuenta de Google 
+      con cuenta existente;
+    else (No)
+      :Crear nuevo registro 
+      en Firebase y PostgreSQL 
+      con datos de Google;
+      :Mostrar formulario para 
+      completar datos faltantes;
+      :Solicitar ubicacion;
+      :Solicitar verificación;
+      :Solicitar topics de interés;
+    endif
+  endif
+split again
+  :Usuario elige registro manual;
+  :Mostrar formulario de registro;
+  :Usuario llena SignUpForm;
+  if (¿Email o username ya existen?) then (Sí)
+    :Mostrar error de 
+    duplicación;
+    stop
+  else (No)
+    if (¿Las contraseñas coinciden?) then (Sí)
+      :Crear nuevo registro 
+      en PostgreSQL con 
+      datos del formulario;
+    else (No)
+      :Mostrar error de 
+      contraseña;
+      stop
+    endif
+  endif
+      :Solicitar ubicacion;
+      :Solicitar verificación;
+      :Solicitar topics de interés;
+end split
+:Generar token de sesión;
+:Devolver información 
+de usuario y token;
+stop
+
+note right
+  SignUpForm:
+  - email (UNIQUE)
+  - username (UNIQUE)
+  - name
+  - lastname
+  - birthdate
+  - phone
+  - password
+  - repeatPassword
+end note
+
+note left
+  Datos obtenidos de Google:
+  - UID de Google
+  - Email
+  - Nombre completo
+  - Foto de perfil (URL)
+
+  Datos a completar si es nuevo:
+  - Username
+  - Birthdate
+  - Phone
+  - Topics de interés
+end note
+@enduml
