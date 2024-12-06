@@ -27,6 +27,7 @@ Using the tab bar at the bottom, the user can navigate to the following screens:
 - Notifications
 - Messages
 - Metrics
+
 Twits from the feed can be divided into two categories: Twits from the sources mentioned above or restrict it to twits from people currently followed by the user.
 Tapping on your profile picture will take you to your profile.
 
