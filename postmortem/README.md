@@ -1,43 +1,43 @@
 # Postmortem
 
-## Lo que salió bien
+## What Went Well
 
-### Planificación
+### Planning
 
--   La separación de roles y la división de tareas fue bastante clara y efectiva en cuanto a los conocimientos de cada uno.
--   Se cumplieron con los tiempos y objetivos definidos.
+- The separation of roles and division of tasks was quite clear and effective regarding each person's knowledge.
+- The defined timelines and objectives were successfully met.
 
-### Tecnología
+### Technology
 
--   React Native y Expo fueron una buena elección para el desarrollo de la app debido a que permitieron un desarrollo multiplataforma y facilidad de implementación con una curva de aprendizaje más baja frene a otras tecnologías.
--   Node.js y Python fueron buenas elecciones para los servicios debido a que ambos son lenguajes que todos los miembros del equipo tenían conocimientos previos y eran fáciles de desarollar.
+- React Native and Expo were a good choice for the app development as they allowed for cross-platform development and ease of implementation with a lower learning curve compared to other technologies.
+- Node.js and Python were good choices for the services as both are languages that all team members had prior knowledge of and were easy to develop.
 
-### Colaboración en equipo
+### Team Collaboration
 
--   Hubo buena comunicación y asignación de tareas.
--   Buen uso de las herramientas de comunicación y trabajo en equipo como Discord, GitHub, etc.
--   Integración mediante pull requests.
+- There was good communication and task assignment.
+- Good use of communication and teamwork tools like Discord, GitHub, etc.
+- Integration through pull requests.
 
-### Recepción del proyecto
+### Project Reception
 
--   Los usuarios y evaluadores fueron muy positivos con el proyecto.
--   La app no presentó inconvenientes durante la presentación en vivo.
+- Users and evaluators were very positive about the project.
+- The app did not present any issues during the live presentation.
 
-## Lo que salió mal
+## What Went Wrong
 
-### Escalabilidad
+### Scalability
 
-Aunque en general la arquitectura de microservicios implementada fue bastante buena, hay algunas features que por el tiempo de desarrollo para el proyecto tuvimos que acotar la complejidad de la solución, por ejemplo:
+Although the microservices architecture implemented was generally quite good, there were some features that, due to the development time for the project, we had to limit the complexity of the solution, for example:
 
--   Las notificaciones de trending topics, que avisa a todos los usuarios de la app.
--   En la edición de perfil, si se modificaba algún dato contenido dentro del objeto twit, se pudiera encolar este cambio para modificar todos los twits de ese usuario, este caso lo diseñamos pero no lo implementamos.
+- Notifications of trending topics, which notify all users of the app.
+- In profile editing, if any data contained within the twit object was modified, this change could be queued to modify all twits of that user; this case was designed but not implemented.
 
-![Diseño de la feature](AsyncUserEdit.png)
+![Feature Design](AsyncUserEdit.png)
 
 ### Design System
 
-En general quedó bastante consistente la UI/UX de la app, pero para ello hubo mucho "Copy-Paste" entre componentes ya que no se definió un design system donde cada componente tuviera el diseño predefinido.
+Overall, the UI/UX of the app remained quite consistent, but there was a lot of "Copy-Paste" between components since a design system was not defined where each component had a predefined design.
 
-### Métricas y gráficos
+### Metrics and Graphs
 
-Se pudo implementar las gráficas y métricas necesarias en el backoffice y app pero se pudo haber aprovechado de mejor manera las librerías de gráficos para una mejor experiencia de visualización.
+The necessary graphs and metrics were implemented in the back office and app, but the graph libraries could have been better utilized for a better visualization experience.
