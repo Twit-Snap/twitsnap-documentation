@@ -100,6 +100,11 @@ This service has the following architecture:
 -   Service layer: Bussiness logic and communicates with the repository
 -   Repository layer: Makes queries to the postgresql database
 
+
+# Auth flow
+
+![auth-flow](authFlow.png)
+
 # Open API specification
 
 ```yaml
