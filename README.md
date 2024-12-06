@@ -4,7 +4,7 @@ This site holds the complete documentation for the services used for the develop
 
 | ![Juan Manuel Pascual Osorio](https://avatars.githubusercontent.com/u/95492503?v=4) | ![Maximiliano Nicolas Otero Silvera](https://avatars.githubusercontent.com/u/106620067?v=4) | ![Martin Juan Cwikla](https://avatars.githubusercontent.com/u/115731294?v=4) | ![Luis Escalante](https://avatars.githubusercontent.com/u/56237034?v=4) |
 |:---:|:---:|:---:|:---:|
-| **Juan Manuel Pascual Osorio**<br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/JM-Pascual) | **Maximiliano Nicolas Otero Silvera**<br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/MaxiOtero6) | **Martin Juan Cwikla**<br><br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/Tinchocw) | **Luis Escalante**<br><br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/Lescalante14) |
+| **Juan Manuel Pascual Osorio**<br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/JM-Pascual) | **Maximiliano Nicolas Otero Silvera**<br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/MaxiOtero6) | **Martin Juan Cwikla**<br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/Tinchocw) | **Luis Escalante**<br><br>[![GitHub](https://img.icons8.com/ios-filled/50/FFFFFF/github.png)](https://github.com/Lescalante14) |
 
 ## Architecture
 
