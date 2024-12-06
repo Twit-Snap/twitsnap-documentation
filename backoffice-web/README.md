@@ -13,6 +13,8 @@ As administrator, in the main page you will see the following options:
 
 ### Administrator Sing Up
 
+![Administrator Sing Up](admin-sing-up.png)
+
 In this section you can register a new administrator. You must enter the following information:
 
 - **Name:** Name of the administrator
@@ -23,6 +25,8 @@ In this section you can register a new administrator. You must enter the followi
 
 
 ### Users
+
+![Users](list-of-users-backoffice.png)
 
 In this section you can see the list of users of the Twitsnap project. You can see the following information:
 
@@ -52,13 +56,19 @@ Clicking on the twit you can see the complete information of the twit. And the w
 
 ### Metrics
 
+![metric options](metrics-options.png)
+
 In this section you can see the metrics of the Twitsnap project. You can see the following information:
 
 
 
 - **Register Metrics:** Shows the metrics of the registered users with and without provider, the average time of registration and the average time of registration and the amount of successful and failed registrations.
 
+![register metrics](registration-per-day.png)
 
+![register metrics](registration-vs-registration-with-provider.png)
+
+![register metrics](average-registration-time.png)
 
 - **Login Metrics:** Shows the metrics of the logins with and without provider, the average time of login and the amount of successful and failed logins.
 
